@@ -1,0 +1,17 @@
+package com.example.weatherapp.data.db
+
+import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
+import androidx.room.Query
+
+@Dao
+interface WeatherDao {
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertAll(data: List<WeatherEntity>)
+
+    @Query("SELECT * FROM weather_table WHERE lower(location) = lower(:location)")
+    suspend fun getForecast(location: String): List<WeatherEntity>
+}
+

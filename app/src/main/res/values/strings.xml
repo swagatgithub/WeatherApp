@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="enter_location">Enter Location</string>
+    <string name="forecast_weather">Forecast Weather</string>
+    <string name="date_label">Date: %1$s</string>
+    <string name="temperature_label">Temperature: %1$.1f °C</string>
+    <string name="condition_label">Condition: %1$s</string>
+    <string name="no_forecast_yet">No forecast data available</string>
+    <string name="show_cached_data">Showing cached data</string>
+    <string name="no_internet_no_cache_data">No Internet and No Cached Data</string>
+</resources>
