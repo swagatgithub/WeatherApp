@@ -40,6 +40,12 @@ It uses an open‑source weather API for remote data, caches responses locally u
 - On subsequent launches:
   - If internet is available, refresh data from API and update cache.
   - If internet is not available, show the most recent forecast stored in Room.
+ 
+  - <p align="center">
+  <img src="https://github.com/user-attachments/assets/f581657f-8e85-46f9-a145-2322158e4c20" width="250"/>
+  <img src="https://github.com/user-attachments/assets/4880a0db-b447-4201-b846-7ce6a915e7d4" width="250"/>
+  <img src="https://github.com/user-attachments/assets/5c527451-7d67-49cb-9e30-eb4bd0eb7d7b" width="250"/>
+</p>
 
 ## Weather API
 
@@ -48,4 +54,5 @@ This project uses the open‑source [Weather API Forecast Endpoint](https://www.
 Example request:
 
 ```https
-GET https://api.weatherapi.com/v1/forecast.json?key=givenAPIKey&q=Delhi&days=3&aqi=no&alerts=no
+GET https://api.weatherapi.com/v1/forecast.json?key=givenAPIKey
+&q=Delhi&days=3&aqi=no&alerts=no
